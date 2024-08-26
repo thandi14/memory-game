@@ -1,0 +1,11 @@
+.bubble {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 2px;
+    cursor: pointer;
+  }
+  .bubble.red { background-color: red; }
+  .bubble.blue { background-color: blue; }
+  .bubble.green { background-color: green; }
