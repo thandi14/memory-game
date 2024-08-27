@@ -1,38 +1,72 @@
+/* Ensure the container for the cards is styled properly */
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  padding: 20px;
+}
+
+/* Style for each card */
+.card {
+  width: 150px;
+  height: 220px;
+  perspective: 1000px;
+  justify-self: center;
+}
+
+/* Inner part of the card that will be flipped */
+.card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  cursor: pointer;
+}
+
+/* This class is added when the card is flipped */
+.card-inner.flipped {
+  transform: rotateY(180deg);
+}
+
+/* Front side of the card (the image) */
+.front,
+.back {
+    width: 100%;
+    background-size: cover;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backface-visibility: hidden;
+    border-radius: 8px;
+}
+
+/* Back side of the card (the playing card image) */
+.back {
+  transform: rotateY(180deg);
+}
+
+/* Add some style to the game */
 .App {
+  font-family: 'Arial', sans-serif;
   text-align: center;
+  padding: 20px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  margin-bottom: 20px;
+  cursor: pointer;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+p {
+  font-size: 1.2rem;
 }
