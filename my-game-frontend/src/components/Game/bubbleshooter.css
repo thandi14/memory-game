@@ -1,90 +1,22 @@
-.game-box {
-    width: 600px;
-    flex-direction: column;
-    align-items: center;
-    display: flex;
+/* bubbleshooter.css */
+
+.game-board {
+    position: relative;
+    width: 800px;
     height: 600px;
-    box-sizing: border-box;
-    position: relative;
-    border: 4px black solid;
+    border: 1px solid black;
     overflow: hidden;
-}
-
-canvas {
-    display: block;
-    margin: 0 auto;
-    background-color: #eee;
   }
 
-#bubble {
-    width: 40px;
-    height: 40px;
-    border-radius: 100%;
-}
-
-.shooter {
-    display: flex;
-    background-color: black;
-    margin: 1px;
+  .bubble {
     position: absolute;
-    bottom: 0;
-    width: 40px;
-    height: 40px;
-    border-radius: 100%;
-    justify-content: center;
-    align-items: center;
-}
-
-#line {
-    background-color: black;
-    width: 2px;
-    display: flex;
-    height: 200px;
-    bottom: 15px;
-    position: absolute;
-}
-
-.shooter > div {
-    position: relative;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-}
-
-.game {
-    text-align: center;
-    height: 600px;
-    width: 600px;
-    display: flex;
-    justify-content: center;
-    position: relative;
-    padding: 10px;
-    border: 4px black solid;
-  }
-
-/* ///// */
-
-.bubble-grid {
-    display: flex;
-    flex-direction: column;
-    height: 40%;
-  }
-  .bubble-row {
-    display: flex;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
   }
 
 
-/* src/Shooter.css */
-.shooter {
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
-    height: 70%;
-    width: 100%;
-    margin-top: 20px;
-    overflow: hidden;
-
-  }
-  button {
-    margin-left: 10px;
-  }
+.bubble.red { background-color: red; }
+.bubble.blue { background-color: blue; }
+.bubble.green { background-color: green; }
+.bubble.purple { background-color: purple; }

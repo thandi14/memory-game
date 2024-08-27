@@ -1,4 +1,4 @@
-.bubble {
+/* .bubble {
     width: 30px;
     height: 30px;
     border-radius: 50%;
@@ -9,3 +9,35 @@
   .bubble.red { background-color: red; }
   .bubble.blue { background-color: blue; }
   .bubble.green { background-color: green; }
+  .bubble.purple { background-color: purple; } */
+  .game-board {
+    position: relative;
+    width: 800px;
+    height: 600px;
+    border: 1px solid black;
+    overflow: hidden;
+  }
+
+  .bubble {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+  }
+
+/* Additional classes for different colors */
+.red {
+    background-color: red;
+}
+
+.blue {
+    background-color: blue;
+}
+
+.green {
+    background-color: green;
+}
+
+.purple {
+    background-color: purple;
+}
