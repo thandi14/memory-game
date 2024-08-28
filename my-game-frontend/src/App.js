@@ -78,9 +78,7 @@ function App() {
 
   return (
     <div className="App">
-      <h1>Memory Matching Game</h1>
-      <button onClick={shuffleCards}>New Game</button>
-      <p>Moves: {moves}</p>
+      <div id="grid">
       <div className="card-grid">
         {cards.map((card) => (
           <Card
@@ -91,6 +89,12 @@ function App() {
             disabled={disabled}
           />
         ))}
+      </div>
+      </div>
+      <div id="intro">
+      <h1>Matching Card Game</h1>
+      <button onClick={shuffleCards}>New Game</button>
+      <p>Moves: {moves}</p>
       </div>
     </div>
   );
