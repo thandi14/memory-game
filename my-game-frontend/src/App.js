@@ -8,8 +8,7 @@ import lion from './img/lion.png';
 import elephant from './img/elephant.png';
 import playingCard from './img/card.png';
 
-// Number of unique cards to display
-const numberOfUniqueCards = 6; // Change this to the number of unique cards you want to show
+const numberOfUniqueCards = 6; // Change this to the number for amount of cards you want to show
 
 const cardImages = [
   { src: monkey, matched: false },

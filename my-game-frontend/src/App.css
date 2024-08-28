@@ -1,12 +1,11 @@
-/* Ensure the container for the cards is styled properly */
 body {
   width: 100%;
     height: 100vh;
     margin: 0px;
     padding: 0px;
     background-image: url('https://images.rawpixel.com/image_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIzLTA4L3Jhd3BpeGVsb2ZmaWNlN18zZF9pbGx1c3RyYXRpb25fb2ZfdHJvcGljYWxfcmFpbmZvcmVzdF9iYWNrZ3JvdV85YWFhNTE2Ni0wOWRhLTRkMGEtOWIxMS1kMjNjNTM2ZDNhZGJfMS5qcGc.jpg'); /* Replace with your image path */
-    background-size: cover; /* Ensures the image covers the entire background */
-    background-repeat: no-repeat; /* Prevents the image from repeating */
+    background-size: cover;
+    background-repeat: no-repeat;
     background-position: center center;
 }
 
@@ -27,7 +26,6 @@ body {
     background-repeat: no-repeat;
 }
 
-/* Style for each card */
 .card {
   width: 120px;
   height: 180px;
@@ -35,7 +33,6 @@ body {
   justify-self: center;
 }
 
-/* Inner part of the card that will be flipped */
 .card-inner {
   position: relative;
   width: 100%;
@@ -45,12 +42,10 @@ body {
   cursor: pointer;
 }
 
-/* This class is added when the card is flipped */
 .card-inner.flipped {
   transform: rotateY(180deg);
 }
 
-/* Front side of the card (the image) */
 .front,
 .back {
     width: 100%;
@@ -64,12 +59,11 @@ body {
     border-radius: 8px;
 }
 
-/* Back side of the card (the playing card image) */
+
 .back {
   transform: rotateY(180deg);
 }
 
-/* Add some style to the game */
 .App {
   font-family: 'Arial', sans-serif;
   text-align: center;
